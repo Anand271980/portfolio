@@ -1,114 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Anand Shinde — Premium Professional Portfolio</title>
-  <meta name="description" content="Portfolio of Anand Shinde — Manager, Powertrain | Robotic Automation | Industrial Washers | Conveyors | Fixtures | 20+ Years of Design & R&D Experience." />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet" />
-  <style>
-    :root{--brand1:#4e54c8;--brand2:#8f94fb;--ink:#0f0f14;--muted:#6b7280;--bg:#f6f7fb;--card:#ffffff;--accent:#ffe66d}
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
-    a{text-decoration:none;color:inherit}
-    img{max-width:100%;display:block}
-    html{scroll-behavior:smooth}
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Anand Shinde — Premium Professional Portfolio</title>
 
-    .container{max-width:1160px;margin-inline:auto;padding:2rem}
+<meta name="description" content="Portfolio of Anand Shinde — Manager, Powertrain | Robotic Automation | 20+ Years of Design & R&D Experience." />
 
-    /* HEADER */
-    header{position:sticky;top:0;z-index:60;background:linear-gradient(90deg,var(--brand1),var(--brand2));color:#fff;box-shadow:0 14px 32px rgba(0,0,0,.12)}
-    .nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.25rem 2rem}
-    .logo{font-weight:900;font-size:1.55rem;letter-spacing:.3px}
-    .nav nav{display:flex;align-items:center;gap:1.35rem}
-    .nav a{font-weight:600;opacity:.92}
-    .nav a:hover{text-decoration:underline;opacity:1}
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;600;700&display=swap" rel="stylesheet" />
 
-    /* HERO */
-    .hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2.5rem;align-items:center;padding:3.75rem 0}
-    .hero > :first-child{order:1} /* text / typing on left */
-    .hero > :last-child{order:2}  /* profile photo on right */
-    .hero-card{background:linear-gradient(135deg,var(--brand2),var(--brand1));color:#fff;border-radius:2.1rem;padding:2.6rem;box-shadow:0 26px 52px rgba(0,0,0,.2)}
-    .hero-card h1{font-size:3.1rem;font-weight:900;margin-bottom:.3rem}
-    .hero-card h3{font-weight:600;margin-bottom:1.1rem}
-    .typing{font-family:'Fira Code',monospace;font-weight:700;color:var(--accent);letter-spacing:.3px}
-    .actions{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.4rem}
-    .btn{padding:.9rem 1.55rem;border-radius:999px;font-weight:800;background:#22c55e;color:#ffffff;box-shadow:0 10px 20px rgba(0,0,0,.16);transition:all .25s ease}
-    .btn:hover{background:#16a34a;transform:translateY(-2px)}
-    .btn.secondary{background:#0a66c2;color:#ffffff;border:none}
-    .btn.secondary:hover{background:#084c94}
-    .btn:hover{transform:translateY(-2px)}
-    .avatar-wrap{display:flex;justify-content:center}
-    .avatar{width:235px;height:235px;border-radius:50%;object-fit:cover;border:5px solid #fff;box-shadow:0 22px 46px rgba(0,0,0,.22)}
+<style>
+:root{
+  --brand1:#4e54c8;
+  --brand2:#8f94fb;
+  --ink:#0f0f14;
+  --muted:#6b7280;
+  --bg:#f6f7fb;
+  --card:#ffffff;
+  --accent:#ffe66d;
+}
 
-    @media(max-width:880px){
-      .hero{grid-template-columns:1fr} /* keep same order on mobile — text above, photo below */
-      .avatar{width:195px;height:195px}
-      .hero-card{border-radius:1.6rem}
-    }
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:var(--bg);
+  color:var(--ink);
+  line-height:1.75;
+}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+html{scroll-behavior:smooth}
 
-    /* SECTIONS */ */
-    section{padding:3.1rem 0}
-    .title{font-size:2.05rem;color:var(--brand1);margin-bottom:1.15rem;font-weight:900}
-    .title::after{content:'';display:block;width:76px;height:4px;border-radius:2px;background:var(--brand2);margin-top:.45rem}
+.container{max-width:1160px;margin:auto;padding:1.5rem}
 
-    .grid{display:grid;gap:1.2rem}
-    @media(min-width:780px){.grid.cols-2{grid-template-columns:repeat(2,1fr)}.grid.cols-3{grid-template-columns:repeat(3,1fr)}}
+/* HEADER */
+header{
+  position:sticky;
+  top:0;
+  z-index:60;
+  background:linear-gradient(90deg,var(--brand1),var(--brand2));
+  color:#fff;
+  box-shadow:0 14px 32px rgba(0,0,0,.12)
+}
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.5rem;
+  padding:1.25rem 2rem
+}
+.logo{font-weight:900;font-size:1.55rem}
+.nav nav{display:flex;gap:1.2rem;flex-wrap:wrap}
+.nav a{font-weight:600}
 
-    .card{background:var(--card);border-radius:1.35rem;padding:1.6rem;box-shadow:0 14px 34px rgba(0,0,0,.06);transition:transform .25s}
-    .card:hover{transform:translateY(-3px)}
-    .muted{color:var(--muted)}
+/* HERO */
+.hero{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:2.5rem;
+  align-items:center;
+  padding:3.5rem 0
+}
+.hero-card{
+  background:linear-gradient(135deg,var(--brand2),var(--brand1));
+  color:#fff;
+  border-radius:2rem;
+  padding:2.6rem;
+  box-shadow:0 26px 52px rgba(0,0,0,.2)
+}
+.hero-card h1{font-size:3.1rem;font-weight:900}
+.hero-card h3{margin:1rem 0}
+.typing{
+  font-family:'Fira Code',monospace;
+  font-weight:700;
+  color:var(--accent)
+}
+.actions{
+  display:flex;
+  gap:1rem;
+  flex-wrap:wrap;
+  margin-top:1.4rem
+}
+.btn{
+  padding:.9rem 1.55rem;
+  border-radius:999px;
+  font-weight:800;
+  background:#22c55e;
+  color:#fff
+}
+.btn.secondary{background:#0a66c2}
 
-    details{background:var(--card);border-radius:1.15rem;padding:1.3rem 1.35rem;box-shadow:0 12px 28px rgba(0,0,0,.07);margin-bottom:1rem}
-    summary{font-weight:800;cursor:pointer}
+.avatar-wrap{display:flex;justify-content:center}
+.avatar{
+  width:235px;
+  height:235px;
+  border-radius:50%;
+  border:5px solid #fff;
+  box-shadow:0 22px 46px rgba(0,0,0,.22)
+}
 
-    footer{text-align:center;padding:2.2rem 0;color:var(--muted);font-size:.9rem}
+/* SECTIONS */
+section{padding:3rem 0}
+.title{
+  font-size:2.05rem;
+  color:var(--brand1);
+  margin-bottom:1.2rem;
+  font-weight:900
+}
+.title::after{
+  content:'';
+  display:block;
+  width:76px;
+  height:4px;
+  background:var(--brand2);
+  margin-top:.4rem;
+  border-radius:2px
+}
 
-    /* CHATBOT */
-    #chatbot{position:fixed;bottom:28px;right:28px;width:68px;height:68px;border-radius:20px;border:none;display:flex;align-items:center;justify-content:center;font-size:1.65rem;font-weight:900;cursor:pointer;background:linear-gradient(135deg,var(--brand1),var(--brand2));color:#fff;box-shadow:0 26px 46px rgba(0,0,0,.32);transition:all .28s ease}
-    #chatbot:hover{transform:translateY(-3px) scale(1.03);box-shadow:0 34px 60px rgba(0,0,0,.38)}
-    #chatbot:active{transform:scale(.96)}
-    #chatbox{position:fixed;bottom:108px;right:28px;width:380px;max-width:94%;background:#fff;border-radius:1.35rem;box-shadow:0 28px 54px rgba(0,0,0,.34);display:none;flex-direction:column;overflow:hidden;border:1px solid #e5e7eb}
-    #chatbox header{background:var(--brand1);color:#fff;padding:.95rem 1rem;font-weight:900}
-    #chatbox .messages{padding:1rem;height:270px;overflow-y:auto;font-size:.92rem}
-    #chatbox .input-container{display:flex;border-top:1px solid #e5e7eb}
-    #chatbox input{flex:1;border:none;padding:.9rem;font-size:.9rem;outline:none}
-    #chatbox button.send-btn{background:var(--brand1);border:none;color:#fff;padding:0 1.05rem;font-weight:800;cursor:pointer}
-    #chatbox button.send-btn:hover{background:var(--brand2)}
+.grid{display:grid;gap:1.2rem}
+.grid.cols-2{grid-template-columns:repeat(2,1fr)}
+.grid.cols-3{grid-template-columns:repeat(3,1fr)}
 
-    @media(max-width:880px){.hero{grid-template-columns:1fr}.avatar{width:195px;height:195px}.hero-card{border-radius:1.6rem}}
-  </style>
+.card{
+  background:#fff;
+  border-radius:1.35rem;
+  padding:1.6rem;
+  box-shadow:0 14px 34px rgba(0,0,0,.06)
+}
+.muted{color:var(--muted)}
+
+details{
+  background:#fff;
+  border-radius:1.15rem;
+  padding:1.3rem;
+  margin-bottom:1rem;
+  box-shadow:0 12px 28px rgba(0,0,0,.07)
+}
+summary{font-weight:800;cursor:pointer}
+
+/* CHATBOT */
+#chatbot{
+  position:fixed;
+  bottom:24px;
+  right:24px;
+  width:64px;
+  height:64px;
+  border-radius:18px;
+  background:linear-gradient(135deg,var(--brand1),var(--brand2));
+  color:#fff;
+  font-size:1.5rem;
+  font-weight:900;
+  border:none;
+  cursor:pointer
+}
+#chatbox{
+  position:fixed;
+  bottom:100px;
+  right:24px;
+  width:380px;
+  max-width:94%;
+  background:#fff;
+  border-radius:1.3rem;
+  display:none;
+  flex-direction:column;
+  overflow:hidden
+}
+#chatbox header{
+  background:var(--brand1);
+  color:#fff;
+  padding:.9rem;
+  font-weight:800
+}
+.messages{
+  padding:1rem;
+  height:260px;
+  overflow-y:auto
+}
+.input-container{
+  display:flex;
+  border-top:1px solid #e5e7eb
+}
+.input-container input{
+  flex:1;
+  padding:.8rem;
+  border:none
+}
+.send-btn{
+  background:var(--brand1);
+  color:#fff;
+  border:none;
+  padding:0 1rem
+}
+
+/* MOBILE FIXES */
+@media(max-width:768px){
+  .nav{flex-direction:column}
+  .hero{grid-template-columns:1fr;text-align:center}
+  .hero-card h1{font-size:2.2rem}
+  .hero-card h3{font-size:1.05rem}
+  .typing{font-size:.9rem}
+  .avatar{width:180px;height:180px}
+  .grid.cols-2,.grid.cols-3{grid-template-columns:1fr}
+  .actions{justify-content:center}
+  #chatbox{right:4%;width:92%}
+}
+
+footer{
+  text-align:center;
+  padding:2rem;
+  color:var(--muted);
+  font-size:.9rem
+}
+</style>
 </head>
-<body>
-  <header>
-    <div class="nav">
-      <div class="logo">Anand Shinde</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div class="hero-card">
-        <h1>Anand Shinde</h1>
-        <h3>Manager, Powertrain — Engineering & Development</h3>
-        <div class="typing">Robotic Automation • Powertrain Projects • Industrial Washers • Conveyors • Fixtures</div>
-        <div class="actions">
-          <a href="https://www.linkedin.com/in/anand-shinde-07aa45308" target="_blank" class="btn secondary">LinkedIn</a>
-          <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
-        </div>
-      </div>
-      <div class="avatar-wrap">
-        <img src="profile.jpg" alt="Profile — Anand Shinde" class="avatar" />
-      </div>
-    </section>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Anand Shinde</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-card">
+    <h1>Anand Shinde</h1>
+    <h3>Manager, Powertrain — Engineering & Development</h3>
+    <div class="typing">
+      Robotic Automation • Powertrain Projects • Industrial Washers • Conveyors • Fixtures
+    </div>
+    <div class="actions">
+      <a href="https://www.linkedin.com/in/anand-shinde-07aa45308" target="_blank" class="btn secondary">LinkedIn</a>
+      <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
+    </div>
+  </div>
+  <div class="avatar-wrap">
+    <img src="profile.jpg" class="avatar" alt="Anand Shinde">
+  </div>
+</section>
 
     <!-- ABOUT / PERSONAL INFORMATION -->
     <section id="about">
@@ -245,7 +384,7 @@
   </main>
 
   <footer>
-    © 2025 Anand Shinde | Designed as a World‑Class Portfolio
+    © 2025 Anand Shinde | All rights reserved.
   </footer>
 
   <script>
@@ -269,4 +408,5 @@
   </script>
 </body>
 </html>
+
 
